@@ -1,6 +1,15 @@
 # InsHack@ti App
 
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python2-1f425f)](https://www.python.org/)
+
+#### Edit config for user creation
+
+Edit row 64 in `butchery/schema.sql` as needed.
+
+```sql
+insert into users ( name, username, password ) values ( '<FriendlyName>', '<LoginUsername>', '<HashedPassword>' );
+```
+
 
 #### To setup and start the application
 
@@ -16,8 +25,8 @@ If you need to reset some parts of the application, just stop the service and ru
 
 #### Start the exploit launcher
 
-As for now, you need to do this manually by running `python exploit_launcher.py`
+As for now, you need to do this manually by running `python2 exploit_launcher.py`
 
 #### Start the flag submitter
 
-As for now, you need to do this manually by running `python flag_submitter.py`
+As for now, you need to do this manually by running `python2 flag_submitter.py`
